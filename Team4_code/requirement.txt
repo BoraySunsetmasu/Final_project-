@@ -1,0 +1,19 @@
+Environment:
+Python 3
+
+Packages needed:
+flask 
+yfinance
+pandas 
+matplotlib
+xlsxwriter
+TA-lib
+openai
+google-cloud-vision
+dateutil
+tkinter
+pillow
+request
+
+
+

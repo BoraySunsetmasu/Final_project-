@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis and AI Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>股票分析與AI諮詢應用程式</h1>
+    </header>
+    <main>
+        <section id="form-section">
+            <div class="form-group">
+                <label for="stock-number">股票編號：</label>
+                <input type="text" id="stock-number">
+            </div>
+            <div class="form-group">
+                <label for="start-date">起始日期：</label>
+                <input type="date" id="start-date">
+            </div>
+            <div class="form-group">
+                <label for="end-date">結束日期：</label>
+                <input type="date" id="end-date">
+            </div>
+            <button id="submit-button">開始查詢</button>
+        </section>
+        <section id="content-section">
+            <div id="analysis-section">
+                <div id="button-frame"></div>
+                <div id="chart-frame">
+                    <img id="chart-image" alt="分析結果圖表">
+                </div>
+            </div>
+            <div id="ai-section">
+                <label for="gpt-question">請輸入您的問題：</label>
+                <input type="text" id="gpt-question">
+                <button id="gpt-button">發送問題至AI顧問</button>
+                <textarea id="gpt-response" readonly></textarea>
+            </div>
+        </section>
+        <section id="download-section">
+            <button id="download-button">下載分析結果</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Computer Programming Final Project | 股票分析工具</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
